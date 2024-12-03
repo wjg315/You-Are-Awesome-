@@ -11,6 +11,8 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var messageLabel: UILabel!
     
+    @IBOutlet weak var anotherMessageLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         print("👍 viewDidLoad has run!")
@@ -23,5 +25,9 @@ class ViewController: UIViewController {
         messageLabel.text = "You are Awesome!"
     }
     
+    @IBAction func anotherMessageButtonPressed(_ sender: UIButton) {
+        print("😃Another message button was pressed!")
+        anotherMessageLabel.text = "You are great!"
+    }
 }
 
