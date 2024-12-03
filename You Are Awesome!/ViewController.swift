@@ -11,6 +11,8 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var messageLabel: UILabel!
     
+    @IBOutlet weak var imageView: UIImageView!
+    
     @IBOutlet weak var anotherMessageLabel: UILabel!
     
     override func viewDidLoad() {
@@ -23,6 +25,7 @@ class ViewController: UIViewController {
     @IBAction func messageButtonPressed(_ sender: UIButton) {
         print("😎 The message button was pressed!")
         messageLabel.text = "You are Awesome!"
+        imageView.image = UIImage(systemName: "person.fill")
     }
     
     @IBAction func anotherMessageButtonPressed(_ sender: UIButton) {
