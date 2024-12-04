@@ -8,7 +8,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     @IBOutlet weak var messageLabel: UILabel!
     
     @IBOutlet weak var imageView: UIImageView!
@@ -18,23 +18,24 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         messageLabel.text = ""
-
-        //messageLabel.text = "Fabulous? That's You!"
-       
-    }
-
-    @IBAction func messageButtonPressed(_ sender: UIButton) {
-
-        messageLabel.text = "You are Awesome!"
-        imageView.image = UIImage(named: "image0")
         
-        messageLabel.textAlignment = .center
-//        imageView.image = "image0"
+        //messageLabel.text = "Fabulous? That's You!"
+        
     }
     
-    @IBAction func anotherMessageButtonPressed(_ sender: UIButton) {
-        print("😃Another message button was pressed!")
-        anotherMessageLabel.text = "You are great!"
+    @IBAction func messageButtonPressed(_ sender: UIButton) {
+        
+        if messageLabel.text == "You Are Awesome!" {
+            messageLabel.text = "You Are Great!"
+            imageView.image = UIImage(named: "image1")
+        } else {
+            messageLabel.text = "You Are Awesome!"
+            imageView.image = UIImage(named: "image0")
+        }
+        
+        
+        
+        
     }
+    
 }
-
