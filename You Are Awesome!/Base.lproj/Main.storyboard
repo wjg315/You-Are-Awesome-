@@ -19,17 +19,17 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5cX-G2-zyi">
                                 <rect key="frame" x="16" y="190.5" width="343" height="456.5"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Placeholder Text!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gPa-fd-knb">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Placeholder Text!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gPa-fd-knb">
                                 <rect key="frame" x="16" y="40" width="343" height="100"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="efO-jt-qxS"/>
+                                    <constraint firstAttribute="height" constant="100" id="mSs-u7-OPg"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
                                 <color key="textColor" red="0.76942896842956543" green="0.20561315553279907" blue="0.099917951567787211" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9RY-Hh-1QO">
-                                <rect key="frame" x="118" y="148" width="139" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9RY-Hh-1QO">
+                                <rect key="frame" x="16" y="148" width="343" height="34.5"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Show Message"/>
                                 <connections>
@@ -40,19 +40,23 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="5cX-G2-zyi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="BQZ-0i-mbB"/>
-                            <constraint firstItem="9RY-Hh-1QO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HpB-Ss-UXz"/>
-                            <constraint firstItem="gPa-fd-knb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="RuV-yZ-1hV"/>
-                            <constraint firstItem="9RY-Hh-1QO" firstAttribute="top" secondItem="gPa-fd-knb" secondAttribute="bottom" constant="8" id="Sjn-2r-IQQ"/>
-                            <constraint firstItem="gPa-fd-knb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Wbq-TB-zcl"/>
-                            <constraint firstItem="5cX-G2-zyi" firstAttribute="top" secondItem="9RY-Hh-1QO" secondAttribute="bottom" constant="8" id="ZS0-Ky-aZQ"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="5cX-G2-zyi" secondAttribute="bottom" constant="20" id="ewP-Cu-WFZ"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5cX-G2-zyi" secondAttribute="trailing" constant="16" id="qpt-Ac-17V"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gPa-fd-knb" secondAttribute="trailing" constant="16" id="vlS-7Q-r10"/>
+                            <constraint firstItem="gPa-fd-knb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="392-Na-rOv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9RY-Hh-1QO" secondAttribute="trailing" constant="16" id="F0D-3E-XCd"/>
+                            <constraint firstItem="9RY-Hh-1QO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Fx8-Kj-w4B"/>
+                            <constraint firstItem="9RY-Hh-1QO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="OSZ-PK-Hfo"/>
+                            <constraint firstItem="9RY-Hh-1QO" firstAttribute="top" secondItem="gPa-fd-knb" secondAttribute="bottom" constant="8" id="Pju-kB-VJq"/>
+                            <constraint firstItem="5cX-G2-zyi" firstAttribute="top" secondItem="9RY-Hh-1QO" secondAttribute="bottom" constant="8" id="U9A-7B-Pvq"/>
+                            <constraint firstItem="5cX-G2-zyi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="UuW-tK-kCB"/>
+                            <constraint firstItem="gPa-fd-knb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="ZCR-h5-fue"/>
+                            <constraint firstItem="9RY-Hh-1QO" firstAttribute="top" secondItem="gPa-fd-knb" secondAttribute="bottom" constant="8" id="adT-Jr-Xod"/>
+                            <constraint firstItem="5cX-G2-zyi" firstAttribute="top" secondItem="9RY-Hh-1QO" secondAttribute="bottom" constant="8" id="boI-XA-K4x"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5cX-G2-zyi" secondAttribute="trailing" constant="16" id="gPG-zW-Uok"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="5cX-G2-zyi" secondAttribute="bottom" constant="20" id="jlq-qG-hKS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gPa-fd-knb" secondAttribute="trailing" constant="16" id="quL-VX-tsD"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="imageView" destination="5cX-G2-zyi" id="cY2-cj-7Ta"/>
+                        <outlet property="imageView" destination="5cX-G2-zyi" id="2Vb-Hs-Edj"/>
                         <outlet property="messageLabel" destination="gPa-fd-knb" id="tcF-4A-lwh"/>
                     </connections>
                 </viewController>
