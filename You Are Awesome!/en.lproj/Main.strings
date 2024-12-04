@@ -1,0 +1,9 @@
+
+/* Class = "UIButton"; configuration.title = "Show Message"; ObjectID = "9RY-Hh-1QO"; */
+"9RY-Hh-1QO.configuration.title" = "Show Message";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "9RY-Hh-1QO"; */
+"9RY-Hh-1QO.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Placeholder Text!"; ObjectID = "gPa-fd-knb"; */
+"gPa-fd-knb.text" = "Placeholder Text!";
