@@ -32,29 +32,42 @@ class ViewController: UIViewController {
         
 //        print(imageNumber)
         
-        //let imageName = "image" + String(imageNumber)
-        let imageName = "image\(imageNumber)"
-        
-        imageView.image = UIImage(named: imageName)
-        
-        imageNumber = imageNumber + 1
-        if imageNumber == 9 {
-            imageNumber = 0
-            
-        }
-        
+
+//        //let imageName = "image" + String(imageNumber)
+//        let imageName = "image\(imageNumber)"
+//        imageView.image = UIImage(named: imageName)
+//        imageNumber = imageNumber + 1
+//        if imageNumber == 9 {
+//            imageNumber = 0
+//            
+//        }
         
         
-        let awesomeMessage = "You Are Awesome!"
-        let greatMessage = "You Are Great!"
-        let bombMessage = "You Are Da Bomb!"
+//
+//        let awesomeMessage = "You Are Awesome!"
+//        let greatMessage = "You Are Great!"
+//        let bombMessage = "You Are Da Bomb!"
+//        
+////        var messagesNumber = 0
+// 
+//        
+//        let messages = [awesomeMessage, greatMessage, bombMessage]
+//
         
-//        var messagesNumber = 0
- 
+        let totalNumberOfImages = 9
         
-        let messages = [awesomeMessage, greatMessage, bombMessage]
+        let messages = ["You Are Awesome!",
+                        "You Are Great!",
+                        "You are Fantastic!",
+                        "When the Genius Bar Needs Help, They Call You!",
+                        "Fabulous? That's You!",
+                        "You've got the Design Skills of Jony Ive"]
         
-        messageLabel.text = messages[messagesNumber]
+//        messageLabel.text = messages[messagesNumber]
+        messageLabel.text = messages[Int.random(in: 0...messages.count-1)]
+        imageView.image = UIImage(named: "image\(Int.random(in: 0...totalNumberOfImages))")
+
+        
         
         messagesNumber = messagesNumber + 1
         print(messagesNumber)
