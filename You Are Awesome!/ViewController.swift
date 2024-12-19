@@ -21,38 +21,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         messageLabel.text = ""
-        
-        //messageLabel.text = "Fabulous? That's You!"
-        
+    
     }
     
-
-    
     @IBAction func messageButtonPressed(_ sender: UIButton) {
-        
-//        print(imageNumber)
-        
-
-//        //let imageName = "image" + String(imageNumber)
-//        let imageName = "image\(imageNumber)"
-//        imageView.image = UIImage(named: imageName)
-//        imageNumber = imageNumber + 1
-//        if imageNumber == 9 {
-//            imageNumber = 0
-//            
-//        }
-        
-        
-//
-//        let awesomeMessage = "You Are Awesome!"
-//        let greatMessage = "You Are Great!"
-//        let bombMessage = "You Are Da Bomb!"
-//        
-////        var messagesNumber = 0
-// 
-//        
-//        let messages = [awesomeMessage, greatMessage, bombMessage]
-//
         
         let totalNumberOfImages = 9
         
@@ -63,36 +35,20 @@ class ViewController: UIViewController {
                         "Fabulous? That's You!",
                         "You've got the Design Skills of Jony Ive"]
         
-//        messageLabel.text = messages[messagesNumber]
+        var newMessage = messages[Int.random(in: 0...messages.count-1)]
+        
+        while messageLabel.text == newMessage {
+            print("*** We had a repeating value. Both newMessage and messageLabel.text = \(newMessage) and \(messageLabel.text!)")
+            newMessage = messages[Int.random(in: 0...messages.count-1)]
+        }
+        
         messageLabel.text = messages[Int.random(in: 0...messages.count-1)]
+        
+        
+        
         imageView.image = UIImage(named: "image\(Int.random(in: 0...totalNumberOfImages))")
 
         
-        
-        messagesNumber = messagesNumber + 1
-        print(messagesNumber)
-        if messagesNumber == messages.count {
-            messagesNumber = 0
-        }
- 
-        
-        
-        //      messageLabel.text = messages.count + 1
-        
-  //      messages.count = messages.count + 1
-        
-        
-        //
-        //        if messageLabel.text == awesomeMessage {
-        //            messageLabel.text = greatMessage
-        //            imageView.image = UIImage(named: "image1")
-        //        } else if messageLabel.text == greatMessage{
-        //            messageLabel.text = bombMessage
-        //            imageView.image = UIImage(named: "image2")
-        //        } else {
-        //            messageLabel.text = awesomeMessage
-        //            imageView.image = UIImage(named: "image0")
-        //        }
     }
     
     
